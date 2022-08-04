@@ -1,3 +1,10 @@
+// navbar
+const menuBtn = document.querySelector(".menu-btn");
+const navList = document.querySelector(".nav-list");
+menuBtn.addEventListener('click', function(){
+    navList.classList.toggle("mobile-menu");
+})
+
 // Scroll to top
 const scrolltp = document.querySelector("#scrolltp");
 scrolltp.addEventListener('click', function(){
@@ -22,6 +29,19 @@ window.addEventListener('scroll', function(){
 
 const themeToggle = document.querySelector(".checkbox");
 const body = document.querySelector("body")
+const darkmode = localStorage.getItem("dark");
+
+if(darkmode){
+    body.classList.add("dark");
+    themeToggle.checked = true;
+}
+
 themeToggle.addEventListener('change', function(){
     body.classList.toggle('dark');
+
+    if(body.classList.contains('dark')){
+        localStorage.setItem("dark", "active");
+    }else {
+        localStorage.removeItem("dark");
+    }
 })
