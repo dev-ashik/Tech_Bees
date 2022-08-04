@@ -113,7 +113,7 @@ header {
 .navbar ul li {
   list-style: none;
   display: inline-block;
-  margin: 0 25px;
+  margin: 0 2%;
 }
 
 .logo {
@@ -651,8 +651,21 @@ body.dark .team .team-h1 {
   }
 }
 
+@media only screen and (max-width:988px) {
+  .navbar ul li {
+    margin: 0 8px;
+  }
+}
+
+@media only screen and (max-width:887px) {
+  .navbar ul li {
+    margin: 0 6px;
+  }
+}
+
 
 @media only screen and (max-width:850px) {
+
   .navbar {
     padding: 0;
   }
