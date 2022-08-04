@@ -1,3 +1,10 @@
+// navbar
+const menuBtn = document.querySelector(".menu-btn");
+const navList = document.querySelector(".nav-list");
+menuBtn.addEventListener('click', function(){
+    navList.classList.toggle("mobile-menu");
+})
+
 // Scroll to top
 const scrolltp = document.querySelector("#scrolltp");
 scrolltp.addEventListener('click', function(){
