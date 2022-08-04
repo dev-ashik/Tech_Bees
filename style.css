@@ -609,9 +609,7 @@ body.dark .team h1 {
   color: #282f59;
 }
 
-body.dark .footer2 h4,
-.footer3 h4,
-.footer4 h4 {
+body.dark .footer2 h4 {
   color: #cbcdda;
 }
 
@@ -625,9 +623,12 @@ body.dark .circle {
 }
 
 body.dark a {
-  color: #cbcdda;
+  color: whitesmoke;
 }
 
+body.dark .team .team-h1 {
+  color: whitesmoke;
+}
 /* animation */
 @keyframes scalup {
   0% {
