@@ -1,6 +1,10 @@
 /* google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 
+html {
+  overflow-x: hidden;
+}
+
 /* Global  */
 * {
   margin: 0;
@@ -145,8 +149,6 @@ header {
   flex-basis: 50%;
   padding: 5rem;
 }
-
-
 
 .header-content h1 {
   font-size: 7vmin;
@@ -651,21 +653,19 @@ body.dark .team .team-h1 {
   }
 }
 
-@media only screen and (max-width:988px) {
+@media only screen and (max-width: 988px) {
   .navbar ul li {
     margin: 0 8px;
   }
 }
 
-@media only screen and (max-width:887px) {
+@media only screen and (max-width: 887px) {
   .navbar ul li {
     margin: 0 6px;
   }
 }
 
-
-@media only screen and (max-width:850px) {
-
+@media only screen and (max-width: 850px) {
   .navbar {
     padding: 0;
   }
@@ -698,7 +698,7 @@ body.dark .team .team-h1 {
   .mobile-menu {
     margin-top: 0;
   }
-  
+
   .navbar ul li {
     display: block;
     margin: 20px auto;
@@ -714,7 +714,6 @@ body.dark .team .team-h1 {
     cursor: pointer;
   }
 
-
   .row {
     flex-direction: column;
     align-items: center;
@@ -723,9 +722,10 @@ body.dark .team .team-h1 {
 
   .container {
     flex-direction: column;
-   }
+  }
 
-  .header-content, .hero-img {
+  .header-content,
+  .hero-img {
     flex-basis: 100%;
     padding: 2rem;
   }
@@ -744,12 +744,14 @@ body.dark .team .team-h1 {
     padding-right: 0;
   }
 
-  .numbers p, .testimonials-p {
+  .numbers p,
+  .testimonials-p {
     padding-right: 3rem;
     padding-left: 3rem;
   }
 
-  .numbers .num-text, .testimonials-h1 {
+  .numbers .num-text,
+  .testimonials-h1 {
     padding-left: 3rem;
   }
 
